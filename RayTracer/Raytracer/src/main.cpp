@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include <limits>
+#include <cfloat>
 #include <glm/glm.hpp>
 using namespace glm;
 #include "Color.h"
@@ -12,7 +12,7 @@ Color backgroundColor = Color(0.0,0.0,0.0,1.0);
 
 
 Intersection next_intersection(Ray ray){
-	float maxdist = INT_MAX;
+	float maxdist = FLT_MAX;
 	Intersection intersection;
 	intersection.winner = 0;
 	for (int i=0;i<primitive.length;i++){

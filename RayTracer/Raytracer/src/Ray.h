@@ -17,9 +17,4 @@ public:
 	glm::vec3 direction;
 };
 
-Ray::Ray() {
-			origen = glm::vec3(0.0,0.0,0.0);
-			direction = glm::vec3(1.0,0.0,0.0);
-}
-
 #endif /* RAY_H_ */

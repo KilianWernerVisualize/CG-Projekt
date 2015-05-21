@@ -8,6 +8,7 @@
 #ifndef INTERSECTION_H_
 #define INTERSECTION_H_
 
+
 class Intersection {
 public:
 	Intersection();
@@ -18,11 +19,5 @@ public:
 	int winner;
 	float dist;
 };
-
-Intersection::Intersection(){
-	point = glm::vec3();
-	winner = 0;
-	dist = INT_MAX;
-}
 
 #endif /* INTERSECTION_H_ */
