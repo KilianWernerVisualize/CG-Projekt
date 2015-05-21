@@ -15,13 +15,13 @@ Intersection next_intersection(Ray ray){
 	float maxdist = FLT_MAX;
 	Intersection intersection;
 	intersection.winner = 0;
-	for (int i=0;i<primitive.length;i++){
+	/*	for (int i=0;i<primitive.length;i++){
 		intersection = test_primitive(primitive[i], ray);
 		if (intersection.dist < maxdist) {
 			maxdist = intersection.dist;
 			intersection.winner = primitive[i];
 		}
-	}
+	}*/
 	return intersection;
 }
 
